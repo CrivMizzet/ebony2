@@ -257,6 +257,15 @@ a:active {
 
 .taxonomy-category a {
 	color: #ffffff;
+	text-decoration: none;
+}
+
+.taxonomy-category a:hover {
+	text-decoration: underline;
+}
+
+.taxonomy-category a {
+	color: #ffffff;
 }
 
 .wp-block-post-title {
