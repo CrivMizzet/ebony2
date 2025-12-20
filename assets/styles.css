@@ -172,8 +172,9 @@ a:active {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	flex-wrap: wrap;
-	gap: 1em;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.5em;
 }
 
 .wp-block-latest-posts__list li {
@@ -242,14 +243,21 @@ a:active {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
-	gap: 2px;
+	gap: 1rem;
 	margin-bottom: 1rem;
 }
 
-.taxonomy-category,
-.wp-block-post-date {
+.taxonomy-category {
 	font-style: normal;
 	font-weight: 700;
+	color: #ffffff;
+	background-color: transparent;
+	font-size: 1rem;
+}
+
+.wp-block-post-date {
+	font-style: normal;
+	font-weight: 400;
 	color: #ffffff;
 	background-color: transparent;
 	font-size: 1rem;
