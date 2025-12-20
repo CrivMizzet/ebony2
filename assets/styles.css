@@ -219,7 +219,7 @@ a:active {
 
 .hero-inner .wp-block-cover__background {
 	background-color: #000000;
-	opacity: 0.8;
+	opacity: 0.4;
 	position: absolute;
 	inset: 0;
 	z-index: 1;
