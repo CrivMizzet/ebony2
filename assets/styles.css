@@ -169,7 +169,10 @@ a:active {
 
 .wp-block-latest-posts__list {
 	font-family: Georgia, serif;
+<<<<<<< HEAD
 	color: #761028;
+=======
+>>>>>>> f804b8a046a8a9344b2692ef7b9e2984f252e443
 	list-style: none;
 	margin: 0;
 	padding: 0;
