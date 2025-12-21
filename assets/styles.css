@@ -184,12 +184,13 @@ a:active {
 }
 
 .wp-block-latest-posts__list a {
-	color: #000000;
-	text-decoration: none;
+	font-family: Georgia, serif;
+	color: #761028;
+	text-decoration: underline;
 }
 
 .wp-block-latest-posts__list a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .wp-block-separator {
