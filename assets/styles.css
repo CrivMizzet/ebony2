@@ -396,6 +396,7 @@ a:active {
 .sharedaddy {
 	margin: 2rem 0;
 	padding: 0 clamp(20px, 4vw, 90px);
+	justify-content: center;
 }
 
 .sd-title {
@@ -498,6 +499,18 @@ a:active {
 
 .footer-text a:hover {
 	text-decoration: none;
+}
+
+.wp-block-audio audio {
+    min-width: 300px;
+    width: 100%;
+}
+
+.wp-block-image img {
+    box-sizing: border-box;
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
 }
 
 /* Responsive Adjustments */
