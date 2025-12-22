@@ -338,26 +338,32 @@ main {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 1.25em;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
+	gap: 1.25em;
 }
 
-/* Limit the maximum width of the grid to create centering effect */
-@media (min-width: 1024px) {
-	.post-grid,
-	.wp-block-post-template {
-		max-width: calc(3 * 300px + 2 * 1.25em + 100px);
-		margin-left: auto;
-		margin-right: auto;
+.post-grid > *,
+.wp-block-post-template > * {
+	flex: 0 0 calc(33.333% - 1.25em);
+	min-width: 280px;
+	max-width: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 968px) {
+	.post-grid > *,
+	.wp-block-post-template > * {
+		flex: 0 0 calc(50% - 1.25em);
 	}
 }
 
-@media (max-width: 600px) {
-	.post-grid,
-	.wp-block-post-template {
-		grid-template-columns: 1fr;
+@media (max-width: 640px) {
+	.post-grid > *,
+	.wp-block-post-template > * {
+		flex: 0 0 100%;
+		max-width: none;
 	}
 }
 
