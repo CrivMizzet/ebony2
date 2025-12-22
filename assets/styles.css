@@ -339,14 +339,24 @@ main {
 	margin: 0;
 	padding: 0;
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
 	gap: 1.25em;
+	justify-items: center;
 }
 
-@media (max-width: 1024px) {
+/* Ensure items don't stretch beyond their natural size */
+.post-grid > *,
+.wp-block-post-template > * {
+	width: 100%;
+	max-width: 400px;
+}
+
+/* For wider screens, maintain the 3-column look */
+@media (min-width: 1024px) {
 	.post-grid,
 	.wp-block-post-template {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		justify-items: center;
 	}
 }
 
