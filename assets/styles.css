@@ -341,14 +341,15 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 1.25em;
+	gap: 2.5em;
+	row-gap: 3em;
 }
 
 .post-grid > *,
 .wp-block-post-template > * {
-	flex: 0 0 calc(33.333% - 1.25em);
+	flex: 0 0 calc(33.333% - 2em);
 	min-width: 280px;
-	max-width: 400px;
+	max-width: 380px;
 }
 
 /* Responsive adjustments */
