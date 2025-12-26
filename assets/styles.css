@@ -535,6 +535,10 @@ figure {
 	flex: auto;
 }
 
+.wp-block-columns.is-not-stacked-on-mobile {
+    flex-wrap: nowrap!important;
+}
+
 .nav-prev {
 	text-align: left;
 }
