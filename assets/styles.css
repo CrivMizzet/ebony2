@@ -66,8 +66,14 @@ p {
 	max-width: 100%;
 }
 
+.aligndouble {
+	max-width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .alignwide {
-	max-width: 980px;
+	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 }
