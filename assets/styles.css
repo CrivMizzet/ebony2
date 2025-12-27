@@ -531,8 +531,69 @@ figure {
 	gap: 2rem;
 }
 
+/* Columns Layout */
+.wp-block-columns {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	margin: 2rem 0;
+}
+
 .wp-block-column {
-	flex: auto;
+	flex: 1;
+	min-width: 0;
+}
+
+.heart-brain-intro {
+	align-items: center;
+}
+
+.heart-brain-intro .wp-block-column:first-child {
+	flex-shrink: 0;
+}
+
+/* Example Boxes */
+.example-box {
+	background-color: #f9f9f9;
+	border-left: 4px solid #761028;
+	padding: 1.5rem;
+	margin: 1.5rem 0;
+}
+
+.example-box p {
+	margin: 0;
+	line-height: 1.8;
+}
+
+/* Blockquotes */
+blockquote {
+	border-left: 4px solid #761028;
+	padding-left: 1.5rem;
+	margin: 1.5rem 0;
+	font-style: italic;
+	color: #444;
+}
+
+blockquote p {
+	margin: 0.5rem 0;
+}
+
+/* Interview Questions */
+h4 {
+	color: #761028;
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+/* Responsive Columns */
+@media (max-width: 968px) {
+	.wp-block-columns {
+		flex-direction: column;
+	}
+	
+	.wp-block-column {
+		flex-basis: 100% !important;
+	}
 }
 
 .wp-block-columns.is-not-stacked-on-mobile {
