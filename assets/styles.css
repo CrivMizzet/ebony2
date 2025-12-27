@@ -338,8 +338,9 @@ main {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	gap: 2.5em;
 	row-gap: 3em;
 }
@@ -347,15 +348,23 @@ main {
 .post-grid > *,
 .wp-block-post-template > * {
 	flex: 0 0 calc(33.333% - 2em);
-	min-width: 260px;  /* Changed from 280px */
+	min-width: 280px;
 	max-width: 380px;
 }
 
 /* Responsive adjustments */
+@media (max-width: 968px) {
+	.post-grid > *,
+	.wp-block-post-template > * {
+		flex: 0 0 calc(50% - 1.25em);
+	}
+}
+
 @media (max-width: 640px) {
-	.post-grid,
-	.wp-block-post-template {
-		grid-template-columns: 1fr;
+	.post-grid > *,
+	.wp-block-post-template > * {
+		flex: 0 0 100%;
+		max-width: none;
 	}
 }
 
