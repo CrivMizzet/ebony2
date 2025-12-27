@@ -67,7 +67,7 @@ p {
 }
 
 .alignwide {
-	max-width: 980px;
+	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -532,7 +532,13 @@ figure {
 }
 
 .wp-block-column {
-	flex: 1;
+	flex: auto;
+}
+
+.wp-block-columns.is-not-stacked-on-mobile {
+    flex-wrap: nowrap!important;
+	flex-basis: 0;
+	flex-grow: 1;
 }
 
 .nav-prev {
